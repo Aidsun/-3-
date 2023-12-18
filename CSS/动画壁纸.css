@@ -1,0 +1,225 @@
+.wallpapers {
+    background-image: url(../Images/wallpapers/wallpapers背景.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 92px 0 30px;
+}
+
+.wallpapers-title {
+    font-size: 60px;
+    font-weight: bold;
+    color: #96dbff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.wallpapers-title span:first-child {
+    color: #fff;
+}
+
+.wallpapers-title span:last-child {
+    display: inline-block;
+    transform: skew(-11deg);
+    font-size: 40px;
+    margin-left: -15px;
+}
+
+.wallpapers .animate-swiper {
+    width: 1264px;
+    height: 342px;
+    background-image: url(../Images/wallpapers/轮播图容器背景.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    padding: 17px 15px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    box-sizing: content-box;
+}
+.swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.wallpapers .animate-swiper .animate-item {
+    width: 1235px;
+    height: 303px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.wallpapers .animate-swiper img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.wallpapers .animate-swiper .swiper-actions {
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+    z-index: 98;
+}
+
+.wallpapers .animate-swiper .swiper-actions .swiper-action {
+    cursor: pointer;
+    margin-right: 10px;
+    border: 2px solid rgba(255, 255, 255, .3);
+}
+
+.wallpapers .animate-swiper .swiper-actions .swiper-action:hover,
+.wallpapers .animate-swiper .swiper-actions .swiper-action.active {
+    border: 2px solid #33c8ff;
+}
+
+.wallpapers .animate-swiper .swiper-actions img {
+    display: block;
+    width: 105px;
+    height: 65px;
+}
+.wallpapers .paper-wrap {
+    width: 1276px;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 30px 20px;
+    background-image: url(../Images/wallpapers/壁纸容器背景.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+.wallpapers .paper-wrap .paper-list {
+    display: none;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    margin: auto;
+}
+.wallpapers .paper-wrap .paper-list.active{
+    display: flex;
+}
+.wallpapers .paper-wrap .paper-list .paper-item {
+    width: 400px;
+    height: 265px;
+    padding-top: 7px;
+    margin-bottom: 20px;
+    margin-right: 12px;
+    cursor: pointer;
+    background-image: url(../Images/wallpapers/壁纸主体背景.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.wallpapers .paper-wrap .paper-list .paper-item .paper-line{
+    display: block;
+    overflow: hidden;
+    width: 384px;
+    height: 216px;
+    margin: 0 auto;
+
+}
+.wallpapers .paper-wrap .paper-list .paper-item img {
+    display: block;
+    overflow: hidden;
+    width: 384px;
+    height: 216px;
+    margin: 0 auto;
+    transition: transform .3s ease-in-out;
+}
+.wallpapers .paper-wrap .paper-list .paper-item:hover img{
+    transform: scale(1.1);
+}
+.wallpapers .paper-wrap .paper-list .paper-item  .paper-intro{
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    line-height: 45px;
+    transform: skew(-11deg);
+}
+.wallpapers .paper-pagination {
+    color: #333;
+    font-size: 20px;
+    font-weight: 400;
+}
+.wallpapers .paper-pagination ul,
+.wallpapers .paper-pagination li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.wallpapers .paper-pagination li:first-child,
+.wallpapers .paper-pagination li:last-child{
+    width: 85px;
+    border: none;
+}
+.wallpapers .paper-pagination li:first-child:hover,
+.wallpapers .paper-pagination li:last-child:hover{
+    color:#0097de ;
+    background-color: transparent;
+}
+.wallpapers .paper-pagination li{
+    border: 1px solid #0097de;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.wallpapers .paper-pagination li:hover{
+    color: white;
+    background-color: #0097de;
+}
+
+
+.jumpImageBox {
+    width: 1200px;
+    height: 675px;
+    position: fixed;
+    left: 20%;
+    top: 20%;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid #56c0f7;
+    z-index: 999;
+    opacity: 1;
+    display: none;
+    box-sizing: border-box;
+}
+
+.jumpImageBox .jumpClose{
+    position: absolute;
+    right: -1px;
+    top: -2px;
+    width: 50px;
+    height: 50px;
+    background-image: url(../Images/pv取消按钮.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 999;
+}
+.jumpImageBox img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
